@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "AvtoMobil": {
+      "commandName": "Project"
+    },
+    "Профиль 1": {
+      "commandName": "Executable"
+    }
+  }
+}

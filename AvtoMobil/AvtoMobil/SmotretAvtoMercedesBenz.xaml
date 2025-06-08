@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AvtoMobil.SmotretAvtoMercedesBenz" Appearing="ContentPage_Appearing">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="White">
+                <Label x:Name="zagolovok" TextColor="Black" HorizontalOptions="Center" FontSize="10"/>
+                <Label x:Name="text" TextColor="Black"/>
+                <Button Clicked="nazad" Text="Назад"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

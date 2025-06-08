@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AvtoMobil.StoimostStrahovki">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" BackgroundColor="White">
+            <Frame BackgroundColor="White" Padding="24" CornerRadius="0">
+                <Label Text="Расчёт страхования автомобиля" HorizontalTextAlignment="Center" TextColor="Black" FontSize="36"/>
+            </Frame>
+            <Picker Title="Тип страховки" TextColor="Black" TitleColor="Black" x:Name="type">
+                <Picker.Items>
+                    <x:String>Ограниченная</x:String>
+                    <x:String>Не ограниченная</x:String>
+                </Picker.Items>
+            </Picker>
+            <Picker Title="Коэф. периода использования" TitleColor="Black" TextColor="Black" x:Name="period">
+                <Picker.Items>
+                    <x:String>3 месяца</x:String>
+                    <x:String>4 месяца</x:String>
+                    <x:String>5 месяцев</x:String>
+                    <x:String>6 месяцев</x:String>
+                    <x:String>7 месяцев</x:String>
+                    <x:String>8 месяцев</x:String>
+                    <x:String>9 месяцев</x:String>
+                    <x:String>10 месяцев и более</x:String>
+                </Picker.Items>
+            </Picker>
+            <Picker Title="Коэф. мощности автомобиля" TitleColor="Black" TextColor="Black" x:Name="mosh">
+                <Picker.Items>
+                    <x:String>50 и меньше</x:String>
+                    <x:String>50 до 70</x:String>
+                    <x:String>70 до 100</x:String>
+                    <x:String>100 до 120</x:String>
+                    <x:String>120 до 150</x:String>
+                    <x:String>свыше 150</x:String>
+                </Picker.Items>
+            </Picker>
+            <Picker Title="Коэф. возраста и стажа(лет)" TitleColor="Black" TextColor="Black" x:Name="stazh">
+                <Picker.Items>
+                    <x:String>до 22, стаж до 3</x:String>
+                    <x:String>старше 22, стаж до 3</x:String>
+                    <x:String>до 22, стаж выше 3</x:String>
+                    <x:String>старше 22, стаж выше 3</x:String>
+                </Picker.Items>
+            </Picker>
+            <Button Text="Рассчитать" Clicked="raschet"/>
+            <Label Text="Приблизительная сумма страхования" TextColor="Black" x:Name="summ"/>
+            <Button Text="Назад" Clicked="nazad"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

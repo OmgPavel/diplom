@@ -1,0 +1,7 @@
+{
+    "dotnet.preferCSharpExtension": true,
+    "ocaml.sandbox": {
+        "kind": "global"
+    },
+    "commentTranslate.targetLanguage": "ru"
+}

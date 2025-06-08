@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AvtoMobil.Marki">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <Button Text="BMW" Clicked="BMW"/>
+            <Button Text="Suzuki" Clicked="Suzuki"/>
+            <Button Text="Group PSA" Clicked="Group_PSA"/>
+            <Button Text="Fiat Chrysler Automobiles" Clicked="Fiat_Chrysler_Automobiles"/>
+            <Button Text="Honda Motor" Clicked="Honda_Motor"/>
+            <Button Text="Ford Motor" Clicked="Ford_Motor"/>
+            <Button Text="Hyndai Kia" Clicked="Hyndai_Kia"/>
+            <Button Text="General Motors" Clicked="General_Motors"/>
+            <Button Text="Renault-Nissan-Mitsubishi" Clicked="Renault_Nissan_Mitsubishi"/>
+            <Button Text="Toyota" Clicked="Toyota"/>
+            <Button Text="VAG" Clicked="VAG"/>
+            <Button Text="Mercedes-Benz" Clicked="Mercedes_Benz"/>
+            <Button Text="Назад" Clicked="nazad"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

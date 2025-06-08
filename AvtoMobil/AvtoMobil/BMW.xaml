@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AvtoMobil.BMW" Appearing="ContentPage_Appearing">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" BackgroundColor="White">
+            <Frame BackgroundColor="White" Padding="24" CornerRadius="0">
+                <Label Text="Основная информация о автомобилях" HorizontalTextAlignment="Center" TextColor="Black" FontSize="36"/>
+            </Frame>
+            <SearchBar x:Name="search" Placeholder="Поиск" TextChanged="search_TextChanged" BackgroundColor="White" TextColor="Black" PlaceholderColor="Black"/>
+            <StackLayout BackgroundColor="White">
+                <ListView x:Name="bmw" HasUnevenRows="True" ItemTapped="bmw_ItemTapped">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Source="{Binding IMAGE}" HeightRequest="150" WidthRequest="150"/>
+                                    <StackLayout>
+                                        <Label Text="{Binding ZAGOLOVOK}" FontSize="20" TextColor="Black"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+            <Button Text="Назад" Clicked="nazad" TextColor="White" BackgroundColor="Black"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
